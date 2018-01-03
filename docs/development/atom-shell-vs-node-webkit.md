@@ -50,3 +50,12 @@ pages.
 Note: NW.js has optionally supported multi-context since 0.13.
 
 [node-bindings]: https://github.com/electron/electron/tree/master/atom/common
+
+__5. Source code protection__
+
+NW.js provides facilities to protect source code by compiling to native code and then 
+either loading the compiled binary from local file system or remotely via XMLHTTPRequest,
+with no performance penalties (as of version 0.22).
+
+Electron has not implemented this feature; and has no published future plans to do so. 
+The highest level of code obfuscation available is packaging into an ASAR file.
